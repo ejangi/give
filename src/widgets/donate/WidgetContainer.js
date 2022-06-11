@@ -1,10 +1,10 @@
-const Main = require('../../components/Main')
+import DonateNow from '../../components/DonateNow'
 
 module.exports = {
   WidgetContainer: ({ location }) => (
     <>
       <h1>Hello World</h1>
-      <Main location={location} />
+      <DonateNow location={location} />
     </>
   )
 }
