@@ -1,4 +1,67 @@
 <!DOCTYPE html>
-<donate-now location="Widget">
-  <script src="/_next/static/widgets/donate/index.js"></script>
-</donate-now>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin:0;
+      padding:0;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .col-md-12 {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #EEE;
+    }
+
+    button {
+      color: white;
+      background-color: black;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    donate-now {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Please support this important cause</h1>
+          <p>Your donation today will help to bring hope!</p>
+          <donate-now location="Widget">
+            <script src="/_next/static/widgets/donate/index.js"></script>
+          </donate-now>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida tincidunt fringilla. Suspendisse egestas pharetra ipsum, sed malesuada arcu. Integer sed finibus sapien. Suspendisse eget enim sapien. Nulla lacinia vestibulum bibendum. Duis quis ultricies felis, vitae sagittis erat. Mauris neque mi, viverra non fermentum eu, egestas vitae magna. Praesent suscipit convallis pharetra. Quisque in cursus nulla. Vestibulum tristique at lorem id dapibus. Donec tortor dolor, porta eu augue et, eleifend cursus nisl. Mauris fringilla eu arcu id dignissim. Fusce dictum ligula ex, vel placerat magna interdum nec.</p>
+
+          <p>Vestibulum interdum fringilla lacus, sit amet molestie tellus lacinia blandit. Aenean non finibus dui. Maecenas eu risus fringilla, egestas orci ut, condimentum lorem. </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
