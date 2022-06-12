@@ -16,7 +16,7 @@ createCustomElement(
       unmount;
 
       connectedCallback() {
-        const modalTitle = this.getAttribute('modalTitle');
+        const location = this.getAttribute('location');
 
         ensureDependencies().then(([React, { render, unmountComponentAtNode }, { WidgetContainer }]) => {
           if (!this.isConnected) {
@@ -25,7 +25,7 @@ createCustomElement(
 
           this.unmount = unmountComponentAtNode;
 
-          const props = { modalTitle };
+          const props = { location };
 
           render(<WidgetContainer {...props} />, this);
         });

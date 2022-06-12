@@ -11,7 +11,13 @@
       padding:0;
     }
 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+
     .container {
+      position: relative;
       margin: 0 auto;
       max-width: 800px;
     }
@@ -46,7 +52,7 @@
         <div class="col-md-12">
           <h1>Please support this important cause</h1>
           <p>Your donation today will help to bring hope!</p>
-          <donate-now location="Widget">
+          <donate-now modalTitle="Bring hope now">
             <script src="/_next/static/widgets/donate/index.js"></script>
           </donate-now>
         </div>

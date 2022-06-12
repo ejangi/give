@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import GivingModal from './GivingModal'
 
-export default function DonateNow() {
+export default function DonateNow({ modalTitle }) {
   const [givingModal, setGivingModal] = useState(false);
 
   useEffect(() => {
@@ -9,16 +9,20 @@ export default function DonateNow() {
     bodyTag.classList.add('donate-now-active');
   }, []);
 
-  const handleClick = (e) => {
+  function handleClick() {
     setGivingModal(true);
-  };
+  }
+
+  function handleHideGivingModal() {
+    setGivingModal(false);
+  }
 
   return (
     <>
-      <button onClick={(e) => handleClick(e)}>
+      <button onClick={handleClick}>
           Donate Now
       </button>
-      <GivingModal show={givingModal} />
+      <GivingModal defaultTitle={modalTitle} show={givingModal} hide={handleHideGivingModal} />
     </>
   )
 }

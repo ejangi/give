@@ -1,9 +1,9 @@
 import DonateNow from '../../components/DonateNow'
 
 module.exports = {
-  WidgetContainer: ({ location }) => (
+  WidgetContainer: ({ modalTitle }) => (
     <>
-      <DonateNow location={location} />
+      <DonateNow modalTitle={modalTitle} />
     </>
   )
 }
